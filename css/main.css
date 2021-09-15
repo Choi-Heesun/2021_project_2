@@ -1,0 +1,1421 @@
+@charset "utf-8";
+
+
+
+
+
+@media (max-width: 599px) {
+	#wrap {width: 100%}
+
+
+	/*header*/
+	header {
+		width: 100%; 
+		height: 100px; 
+		background: rgba(0, 0, 0, 0.9);
+		padding: 1%;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
+
+	#logo {
+		width: 10%;
+		height: 100%; 
+		float: left;
+		padding: 1%;
+	}
+
+	#logo a img {height: 100%}
+
+	nav {
+		display: none;
+		width:50%;
+		height: 90%;
+		color: #fff;
+		margin: 0 auto;
+		position: absolute;
+		top: 100px;
+		right: 0;
+	}
+
+	.main_nav {
+		display: block;
+		width: 100%;
+		height: 100%;
+		float: left;
+		text-align: left;
+		font-size: 12px;
+		font-weight: normal;
+		letter-spacing: 1px;
+	}
+
+	.main_nav > li {
+		width: 100%;
+		height: 40px;
+		float: left;
+		line-height: 40px;
+		background-color: white;
+		padding-left: 10px;
+		border-bottom: 1px solid #eee;
+		position: relative;
+	}
+
+	.main_nav > li:hover {
+		background-color: #000;
+	}
+
+	.main_nav > li:hover > a {
+		color: #fff;
+	}
+
+	.main_nav > li > a {
+		width: 100%;
+		height: 100%;
+		color: #777;
+		display: inline-block;
+	}
+
+	.sub_nav {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 999;
+		background-color: rgba(0, 0, 0, 0.9);
+		font-weight: normal;
+		display: none;
+		right: 100%;
+	}
+
+	.sub_nav > li {
+		width: 100%;
+		height: 35px;
+		line-height: 35px;
+		text-align: left;
+		padding-left: 35px;
+	}
+
+	.sub_nav > li > a {
+		color: #fff;
+		display: block;
+	}
+
+	.sub_nav > li > a:hover {
+		color: #ccc;
+	}
+
+	
+	#navicons {
+		display: block;
+		float: right;
+		color: #fff;
+		width: 15%;
+		height: 100%;
+		line-height: 80px;
+	}
+
+	#navicons > li {
+		float: left;
+		width: 33.33%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+		/*mainbox:slider*/
+		#slider {width: 100%; height: 100vh; position: relative; background-color: #000; overflow: hidden;}
+
+		#slider > .slider_show,
+		#slider > .slider_show > li {
+			width: 100%; height: 100vh;
+		}
+		#slider > .slider_show > li > img {
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		#slider > .slider_show > li {
+		position: absolute;
+		}
+		#slider > .slider_show > li:not(:first-child){
+			display: none;
+		}
+		
+		
+		.slider_textbox {position: absolute; top:40%; left: 18%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+
+		.slider_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 50%; color: #fff}
+		.slider_textbox h1 {margin: 5% 0; font-size: 300%; color: #fff; letter-spacing: 8px}
+		.slider_textbox p:nth-of-type(2) {font-size: 80%; line-height: 150%; color: #fff}
+		.slider_textbox button {width: 170px; background: #fff; cursor: pointer;text-transform: uppercase; margin: 10% 0 0 0; padding: 15px; font-size: 12px; letter-spacing: 1px; border:none;}
+		.slider_textbox button a:hover {background: #333; color: #fff}
+
+
+		/*mainbox:story*/
+		#story {width: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding: 7% 0; padding: 15% 0}
+
+		.story_textbox {width:90%; text-align: center; margin: 0 0 5% 0;}
+		.story_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%}
+		.story_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%}
+		.story_textbox p:nth-of-type(2) {font-size: 90%; line-height: 150%; color: #666}
+
+		.story_imgbox {width:75%; height: 28%; margin: 3% 0}
+		.story_imgbox img {width: 100%; height: 100%}
+
+		.story_signbox {width:60%; text-align: center; margin: 5% 0 0 0 }
+		.story_signbox img {width: 100%}
+		.story_signbox p {font-size: 80%; letter-spacing: 2px; line-height:30px; color:#666;}
+
+		/*mainbox:box01*/   
+		#box01_wrap {width: 100%; background: #ebebeb; padding: 15% 0}
+		#box01 {width: 90%; height: 535px; margin:0 auto; background: #ebebeb; display: flex; flex-direction: column;}
+
+		.box01_textbox {width: 100%; display: flex; flex-direction: column; justify-content: space-between; text-align: center;}
+		.box01_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%}
+		.box01_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%}
+		.box01_textbox p:nth-of-type(2) {font-size: 90%; line-height: 150%;}
+
+		#box01 img {width: 100%;  margin: 0 auto}
+		.box01_textbox button {margin: 0 auto; position: relative; bottom:-128%}
+
+		/*mainbox:box02*/
+
+
+		#box02_wrap {width: 100%; height: 480px; background: black; position: relative; }
+						#box02_background {width: 100%; height: 100%; background-image: url(../img/box02_slidefixed.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment:fixed; opacity:0.5}
+						.bx2_review_wrap {
+							width: 90%;
+							height: 55%;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							overflow: hidden;
+						}
+
+						.bx2_review {
+							width: 300%;
+							height: 100%;
+							text-align: center;
+							color: #fff;
+						}
+
+						.bx2_review > li {
+							width: 33.3333%;
+							height: 100%;
+							float: left;
+							padding: 0 2.5%;
+							
+						}
+					
+
+						.bx2_review > li > div {
+							width: 80px;
+							height: 80px;
+							border-radius: 100%;
+							overflow: hidden;
+							margin: 0 auto;
+						}
+
+						.bx2_review > li > div > img {
+							width: 80px;
+							height: 80px;
+						}
+
+	
+
+						.bx2_review > li > p {
+							font-size: 16px;
+							margin: 3% 0;
+						}
+
+						.bx2_review > li > span {
+							font-size: 12px;
+							font-weight: bold;
+						}
+
+
+
+		/*mainbox:menu*/
+		#menu_wrap {width: 100%; display: flex; justify-content: center; align-items: center; padding: 15% 0 }
+		#menu {width: 100%; height: auto; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; align-items: center; align-content: center; }
+
+		.menu_textbox {width:90%; text-align: center; margin: 0 0 5% 0; }
+		.menu_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%}
+		.menu_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%}
+		.menu_textbox p:nth-of-type(2) {font-size: 90%; line-height: 150%; color: #666}
+
+		.menu_listbox {width: 90%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: center; align-items: center; margin: 7% 0 0 0; }
+		.menu_listbox h5 {font-weight: bold; font-size: 13spx; letter-spacing: 2px}
+		.menu_listbox h4 {font-weight: normal; font-size: 18px; }
+		.menu_listbox p {width: 100%; font-size: 14px; color: #666; margin: 2% 0 0 0}
+		.menu_listbox hr {width: 40%; border:none; border-bottom: 1px solid #ddd}
+
+
+		/*mainbox:box03*/
+		#box03_wrap {width: 100%; background: #f9f9fb; display: flex; justify-content: center; flex-wrap: wrap; padding: 13% 0}
+
+		.box03 {width: 80%; margin: 6% 0 ;display: flex; flex-direction:column; justify-content: center; align-items: center; }
+		.box03_imgbox {width: 93px; height: 116px; background: none}
+		.box03_imgbox img {width:100%; height: 100%}
+		.box03_textbox {width: 100%; text-align: center; margin: 5% 0 0 0}
+		.box03_textbox h3 {font-weight: normal; font-size: 90%; letter-spacing: 2px; margin:2% 0}
+		.box03_textbox p {font-size: 13px; line-height: 150% ;color: #666; }
+
+
+		/*mainbox:reservation*/
+		#reservation_wrap {width: 100%; height: 100vh; background: black; text-align: center;}
+		#reservation {width: 100%; height: 100%; background-image: url(../img/reservations_background_2.jpg); 
+			background-size: cover; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.3; background-position: center;}
+			.reservation_textbox {width:90%; text-align: center; margin: 0 0 2% 0; position: relative; bottom: 85%; margin: 0 auto; }
+			.reservation_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%; color: #fff}
+			.reservation_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%; color: #fff}
+			.reservation_textbox p:nth-of-type(2) {font-size: 90%; line-height: 150%; color: #666; color: #fff}
+
+			.reservation_boardbox {width: 90%; height:30%;  position: relative; bottom: 80%; margin: 6% auto; }
+			.reservation_boardbox form {width: 100%; height:100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+			.reservation_boardbox form input {width: 49%; height: 18%; padding: 3%; background: #fff; border: none; color: #666; font-size: 12px; letter-spacing: 1px}
+			.reservation_boardbox form input:last-of-type {width: 100%; height: 36%}
+
+			#reservation_wrap button {position: relative; bottom: 80%; background: none; border: 2px solid #fff; color: #fff}
+			#reservation_wrap button a {color: #fff}
+			#reservation_wrap button:hover {background: #fff; transition: all 0.3s}
+			#reservation_wrap button:hover a {color: #000; transition: all 0.3s}
+
+			/*mainbox:today*/
+			#today_wrap {width: 100%; height: 200vw; padding: 0; display: flex; align-items: center; }
+			#today {width:90%; height:88%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content:space-between; align-items: center; position: relative; flex-direction: column;}
+
+			#today ul {width: 100%; height: 25%; display: flex; flex-flow: column nowrap; position: absolute; top: 0}
+			#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}
+
+			.listbox_menu p {font-size: 12px; font-weight: normal; letter-spacing: 2px}
+
+
+			.today_detailbox {width: 100%; height: 75%;display: flex; position: absolute;  flex-direction: column; bottom: 0; background: #fff}
+			.detail_textbox {width: 100%; height: 50%; display: flex; flex-direction: column; justify-content: center; padding:  10% 0}
+			.detail_textbox h1 {font-weight: normal;}
+			.detail_textbox p {line-height: 155%; color: #666; font-size: 14px;}
+			.detail_textbox p:nth-of-type(1) {margin: 40px 0 30px 0}
+			.detail_imgbox {width: 100%; height: 50%; }
+			.detail_imgbox img {height:100%; display: block; margin: 0 auto}
+			
+
+			/*slidemenu*/
+			#slidemenu_wrap {
+				width: 100%; 
+				height:30vw; 
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.slidemenu {
+				width: 200%;
+				height:30vw;
+				display: flex;
+				flex-wrap: wrap;
+				overflow: hidden;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.slidemenu > li {
+				width: 17%;
+				height:30vw;
+				background-color: #000;
+				float: left;
+				margin-right: 0.1%;
+				position: relative;
+			}
+
+			.slidemenu > li > a, 
+			.slidemenu > li > a > img{
+				width: 100%;
+				height:30vw;
+				display: block;
+			}
+
+			.slidemenu > li:hover > a > img{
+				opacity: 0.5;
+				transition: 0.5s;
+			}
+
+			.slidemenu_txt {
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				text-align: center;
+				color: #fff;
+				overflow: hidden;
+				display: none;
+			}
+
+			.slidemenu_txt > h4 {
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+
+			.slidemenu_txt > P {
+				text-transform:uppercase;
+				font-size: 12px;
+				letter-spacing: 1px;
+			}
+
+			.slidemenu > li:hover .slidemenu_txt {
+				display: block;
+			}
+
+			#slidemenu_wrap > span {
+				width: 50px;
+				height: 50px;
+				background-color: rgba(0, 0, 0, 0.3);
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				border-radius: 100%;
+				border: 2px solid rgba(255, 255, 255, 0.8);
+				text-align: center;
+				line-height: 45px;
+				font-size: 30px;
+				font-weight: bold;
+				color: rgba(255, 255, 255, 0.8);
+				cursor: pointer;
+				display: block;
+			}
+
+			#slidemenu_wrap > span.prev {
+				left: 30px;
+			}
+
+			#slidemenu_wrap > span.next {
+				right: 30px;
+			}
+
+
+
+
+			/*mainbox:chef*/
+			#chef_wrap {width: 100%; background: #ebebeb; display: flex; align-items: center;}
+			#chef {width: 100%; height: 750px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 15% 0 0 0; justify-content: space-between; }
+			.chef_textbox {width: 90%; display: flex; flex-direction: column; justify-content: center; text-align: center;}
+			.chef_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%}
+			.chef_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%}
+			.chef_textbox p:nth-of-type(2) {font-size: 100%; line-height: 150%; color: #666}
+			.chef_textbox button {margin: 10% auto 0 auto}
+			.chef_imgbox {width: 90%; overflow: hidden; }
+			.chef_imgbox > img {width: 100%;}
+
+			/*mainbox:recipe*/
+			#recipe_wrap {width: 100%; display: flex; justify-content: center; align-items: center; padding: 15% 0}
+			#recipe {width: 100%; height:2100px; display: flex; flex-wrap: wrap; justify-content: center; align-content: space-between; }
+			.recipe_textbox {width:90%;  text-align: center; }
+			.recipe_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 70%}
+			.recipe_textbox h1{margin: 5% 0; letter-spacing: 5px; font-size: 230%}
+			.recipe_textbox p:nth-of-type(2) {font-size: 100%; line-height: 150%; color: #666}
+
+			.recipe_imgbox {width: 100%; height: 55vw;  overflow: hidden; background: black}
+			.recipe_imgbox a img {width: 100%; height: 100%}
+
+
+			.recipe_detailbox {position: relative;width: 90%; height: 550px; display: flex; flex-direction: column; justify-content: space-between; padding: 0 0 2% 0}
+			.recipe_detailbox h5 {font-size: 13px; font-weight: normal; letter-spacing: 2px; margin: 1% 0 0 0}
+			.recipe_detailbox a h1 {font-size: 20px; font-weight: normal; line-height:150%;}
+			.recipe_detailbox p {font-size: 14px; line-height:150%; color: #666 }
+			.recipe_detailbox h6 a {font-size: 11px; font-weight: normal; letter-spacing: 2px; color: #333}
+
+			.recipe_detailbox::before {
+				content: "";
+				width: 100%;
+				height:4px;
+				background-color: #eee;
+				position: absolute;
+				bottom: 0px;
+				
+			}
+
+			.recipe_detailbox::after {
+				content: "";
+				width: 0%;
+				height: 4px;
+				background-color: black;
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				transform: translateX(-50%);
+
+				
+			}
+
+			@keyframes detailboxBar{
+				100% {width:100%}
+			}
+
+			.recipe_detailbox:hover::after {
+				animation-name: detailboxBar;
+				animation-duration: 0.5s;
+				animation-fill-mode: forwards;
+			}
+
+
+			.recipe_imgbox a img:hover {opacity: 0.5; transition: 0.3s}
+
+
+
+			/*footer*/
+			footer {width:100%; background: #111; display: flex; justify-content: center; align-items: center; padding: 15% 0}
+			#footerbox_wrap {width: 70%; height: 500px; display: flex; flex-direction: column; text-align: center; justify-content: space-between;}
+			.footerbox {width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+			.footerbox h6 {font-size: 14px; letter-spacing: 1px; color: #fff; line-height: 150%}
+			.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+			.footerbox > p {color: #fff; font-size: 12px; line-height: 150%; margin: 10px 0}
+			.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+			.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+			#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+
+			.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+
+		}
+
+
+
+
+		@media (min-width: 600px) {
+
+			#wrap {width: 100%}
+
+			/*header*/
+
+			header {
+				width: 100%; 
+				height: 100px; 
+				background: rgba(0, 0, 0, 0.9);
+				padding: 1%;
+				position: fixed;
+				top: 0;
+				z-index: 999;
+			}
+
+			#logo {
+				width: 10%;
+				height: 100%; 
+				float: left;
+				padding: 1%;
+			}
+
+			#logo a img {height: 100%}
+
+			nav {
+				display: none;
+				width:30%;
+				height: 90%;
+				color: #fff;
+				margin: 0 auto;
+				position: absolute;
+				top: 100px;
+				right: 0;
+			}
+
+			.main_nav {
+				display: block;
+				width: 100%;
+				height: 100%;
+				float: left;
+				text-align: left;
+				font-size: 12px;
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+
+			.main_nav > li {
+				width: 100%;
+				height: 40px;
+				float: left;
+				line-height: 40px;
+				background-color: white;
+				padding-left: 10px;
+				border-bottom: 1px solid #eee;
+				position: relative;
+			}
+
+			.main_nav > li:hover {
+				background-color: #000;
+			}
+
+			.main_nav > li:hover > a {
+				color: #fff;
+			}
+
+			.main_nav > li > a {
+				width: 100%;
+				height: 100%;
+				color: #777;
+				display: inline-block;
+			}
+
+			.sub_nav {
+				width: 100%;
+				position: absolute;
+				top: 0;
+				z-index: 999;
+				background-color: rgba(0, 0, 0, 0.9);
+				font-weight: normal;
+				display: none;
+				right: 100%;
+			}
+
+			.sub_nav > li {
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				text-align: left;
+				padding-left: 35px;
+			}
+
+			.sub_nav > li > a {
+				color: #fff;
+				display: block;
+			}
+
+			.sub_nav > li > a:hover {
+				color: #ccc;
+			}
+
+			
+			#navicons {
+				display: block;
+				float: right;
+				color: #fff;
+				width: 15%;
+				height: 100%;
+				line-height: 80px;
+			}
+
+			#navicons > li {
+				float: left;
+				width: 33.33%;
+				text-align: center;
+				cursor: pointer;
+			}
+
+
+
+				/*mainbox:slider*/
+				#slider {width: 100%; height: 100vh; position: relative; background-color: #000; overflow: hidden;}
+
+				#slider > .slider_show,
+				#slider > .slider_show > li {
+					width: 100%; height: 100vh;
+				}
+
+				#slider > .slider_show > li > img {
+					height: 100%;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				#slider > .slider_show > li {
+					position: absolute;
+				}
+				#slider > .slider_show > li:not(:first-child){
+					display: none;
+				}
+
+				.slider_textbox {position: absolute; top:40%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 20%}
+
+				.slider_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px; color: #fff; }
+				.slider_textbox h1{margin: 2% 0; letter-spacing: 15px;  font-size: 65px; color: #fff}
+				.slider_textbox p:nth-of-type(2) {font-size: 14px; line-height: 150%; color: #fff; width: 70%}
+				.slider_textbox button {width: 170px; background: #fff; cursor: pointer;text-transform: uppercase; margin: 10% 0 0 0; padding: 15px; font-size: 12px; letter-spacing: 1px; border:none;}
+				.slider_textbox button:hover {background: #333;}
+				.slider_textbox button:hover a {color: #fff;}
+
+
+
+
+				/*mainbox:story*/
+				#story {width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center;  padding: 15% 0}
+
+				.story_textbox {width: 100%; text-align: center; padding: 0 15% }
+				.story_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+				.story_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+				.story_textbox p:nth-of-type(2) {font-size: 16px; line-height: 180%; color: #666}
+
+				.story_imgbox {width:45%; height: 45%; margin: 4% 2%;}
+				.story_imgbox img {width: 100%; height: 100%}
+
+				.story_signbox {width:100%; text-align: center}
+				.story_signbox p {font-size: 12px; letter-spacing: 2px; line-height:30px; color:#666;}
+
+				/*mainbox:box01*/
+				#box01_wrap {width: 100%; background: #ebebeb;  padding: 15% 0}
+				#box01 {width: 100%; margin:0 auto; background: #ebebeb; display: flex; align-items: center; justify-content: space-between; flex-direction: column;}
+
+				.box01_textbox {width: 90%; margin: 0 2% 0 0; height: 50%; display: flex; flex-direction: column; justify-content: space-between; text-align: center; padding: 0 5%}
+				.box01_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+				.box01_textbox h1 {margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+				.box01_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%;}
+				.box01_textbox button {margin: 5% auto;}
+
+				/*mainbox:box02*/
+						#box02_wrap {width: 100%; height: 480px; background: black; position: relative; }
+						#box02_background {width: 100%; height: 100%; background-image: url(../img/box02_slidefixed.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment:fixed; opacity:0.5}
+						.bx2_review_wrap {
+							width: 90%;
+							height: 45%;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							overflow: hidden;
+						}
+
+						.bx2_review {
+							width: 300%;
+							height: 100%;
+							text-align: center;
+							color: #fff;
+						}
+
+						.bx2_review > li {
+							width: 33.3333%;
+							height: 100%;
+							float: left;
+							padding: 0 2.5%;
+							
+						}
+					
+
+						.bx2_review > li > div {
+							width: 80px;
+							height: 80px;
+							border-radius: 100%;
+							overflow: hidden;
+							margin: 0 auto;
+						}
+
+						.bx2_review > li > div > img {
+							width: 80px;
+							height: 80px;
+						}
+
+	
+
+						.bx2_review > li > p {
+							font-size: 16px;
+							margin: 3% 0;
+						}
+
+						.bx2_review > li > span {
+							font-size: 12px;
+							font-weight: bold;
+						}
+
+
+
+				/*mainbox:menu*/
+				#menu_wrap {width: 100%;  display: flex; justify-content: center; align-items: center; padding: 10% 0}
+				#menu {width:  90%; height: 1000px;display: flex; flex-wrap: wrap; 		justify-content: space-between; align-items: center; align-content: space-between; flex-direction:column; }
+
+				.menu_textbox {width: 100%; text-align: center; padding: 0 15% }
+				.menu_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+				.menu_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+				.menu_textbox p:nth-of-type(2) {font-size: 16px; line-height: 180%; color: #666}
+
+				.menu_listbox {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: center; align-items: center; }
+				.menu_listbox h5 {font-weight: bold; font-size: 13px; letter-spacing: 1px}
+				.menu_listbox h4 {font-weight: normal; font-size: 18px; }
+				.menu_listbox p {width: 100%; font-size: 14px; color: #666; margin: 2% 0 0 0}
+				.menu_listbox hr {width: 50%; border:none; border-bottom: 1px solid #ddd}
+
+
+				/*mainbox:box03*/
+				#box03_wrap {width: 100%; background: #f9f9fb; display: flex; justify-content: center; flex-wrap: wrap; padding: 5% 0}
+
+				.box03 {width: 40%; height: 300px; margin: 2%; display: flex; flex-direction:column; justify-content: center; align-items: center;}
+				.box03_imgbox {width: 93px; height: 116px; background: none}
+				.box03_imgbox img {width:100%; height: 100%}
+				.box03_textbox {width: 100%; text-align: center; margin: 5% 0 0 0; }
+				.box03_textbox h3 {font-weight: normal; font-size: 15px; letter-spacing: 2px;}
+				.box03_textbox p {font-size: 13px; color: #666; margin:3% 0 0 0}
+
+
+				/*mainbox:reservation*/
+				#reservation_wrap {width: 100%; height: 100vh; background: black; text-align: center;}
+				#reservation {width: 100%; height: 100%; background-image: url(../img/reservations_background_2.jpg); 
+					background-size: cover; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.3; background-position: center;}
+					.reservation_textbox {width:100%; text-align: center; margin: 0 0 2% 0; position: relative; bottom: 83%; }
+					.reservation_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px; color:#fff;}
+					.reservation_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px; color:#fff;}
+					.reservation_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%; color:#fff;}
+
+					.reservation_boardbox {width: 550px; height:30%;  position: relative; bottom: 80%; margin: 0 auto; }
+					.reservation_boardbox form {width: 100%; height:100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; }
+					.reservation_boardbox form input {width: 49%; height: 18%; padding: 3%; background: #fff; border: none; color: #666; font-size: 12px; letter-spacing: 1px}
+					.reservation_boardbox form input:last-of-type {width: 100%; height: 36%}
+
+					#reservation_wrap button {position: relative; bottom: 78%; background: none; border: 2px solid #fff;}
+					#reservation_wrap button a {color: #fff}
+					#reservation_wrap button:hover {background: #fff; transition: all 0.3s}
+					#reservation_wrap button:hover a {color: #000; transition: all 0.3s}
+
+					/*mainbox:today*/
+					#today_wrap {width: 100%; height: 730px; padding: 0; display: flex; align-items: center;}
+					#today {width:90%; height:90%; margin: 0 auto; display: flex; flex-wrap: nowrap; justify-content:space-between; align-items: center; position: relative; flex-direction: row; background: #fff}
+
+					#today ul {width: 35%; height: 40%; display: flex; flex-flow: column nowrap; position: absolute; top: 0; }
+					#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}
+
+					.listbox_menu p {font-size: 12px; font-weight: normal; letter-spacing: 2px}
+
+
+					.today_detailbox {width: 65%; height: 100%;display: flex; ; position: absolute;  flex-direction: column; right: 0; top:0;background: #fff; }
+					.detail_textbox {width: 100%; height: 50%; display: flex; flex-direction: column; justify-content: flex-start; padding:  0 10px; text-align: center;}
+					.detail_textbox h1 {font-weight: normal;}
+					.detail_textbox p {line-height: 155%; color: #666; font-size: 14px}
+					.detail_textbox p:nth-of-type(1) {margin: 30px 0 40px 0}
+					.detail_imgbox {width: 100%; height: 50%; overflow: hidden;}
+					.detail_imgbox img {height:100%; display: block; margin: 0 auto}
+				
+
+					/*slidemenu*/
+					#slidemenu_wrap {
+						width: 100%; 
+						height:30vw; 
+						margin: 0 auto;
+						position: relative;
+						overflow: hidden;
+					}
+
+					.slidemenu {
+						width: 200%;
+						height:30vw;
+						display: flex;
+						flex-wrap: wrap;
+						overflow: hidden;
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+
+					.slidemenu > li {
+						width: 17%;
+						height:30vw;
+						background-color: #000;
+						float: left;
+						margin-right: 0.1%;
+						position: relative;
+					}
+
+					.slidemenu > li > a, 
+					.slidemenu > li > a > img{
+						width: 100%;
+						height:30vw;
+						display: block;
+					}
+
+					.slidemenu > li:hover > a > img{
+						opacity: 0.5;
+						transition: 0.5s;
+					}
+
+					.slidemenu_txt {
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						left: 0;
+						transform: translateY(-50%);
+						text-align: center;
+						color: #fff;
+						overflow: hidden;
+						display: none;
+					}
+
+					.slidemenu_txt > h4 {
+						font-size: 18px;
+						margin-bottom: 5px;
+					}
+
+					.slidemenu_txt > P {
+						text-transform:uppercase;
+						font-size: 12px;
+						letter-spacing: 1px;
+					}
+
+					.slidemenu > li:hover .slidemenu_txt {
+						display: block;
+					}
+
+					#slidemenu_wrap > span {
+						width: 50px;
+						height: 50px;
+						background-color: rgba(0, 0, 0, 0.3);
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						border-radius: 100%;
+						border: 2px solid rgba(255, 255, 255, 0.8);
+						text-align: center;
+						line-height: 45px;
+						font-size: 30px;
+						font-weight: bold;
+						color: rgba(255, 255, 255, 0.8);
+						cursor: pointer;
+						display: block;
+					}
+
+					#slidemenu_wrap > span.prev {
+						left: 30px;
+					}
+
+					#slidemenu_wrap > span.next {
+						right: 30px;
+					}
+
+
+					/*mainbox:chef*/
+					#chef_wrap {width: 100%; background: #ebebeb; display: flex; align-items: center;}
+					#chef {width: 1270px; height: 100%; margin: 0 auto; display: flex;  flex-direction: column; align-items: center; padding:10% 0 0 0;}
+					.chef_textbox {width: 90%; height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 0 15%}
+					.chef_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+					.chef_textbox h1 {margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+					.chef_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%;}
+					.chef_textbox button {margin: 5% auto}
+
+					.chef_imgbox {width: 60%; height: 100%; overflow: hidden;}
+					.chef_imgbox > img {height: 100%;}
+
+					/*mainbox:recipe*/
+					#recipe_wrap {width: 100%; height: 100vh;display: flex; justify-content: center; align-items: center;}
+					#recipe {width: 90%; height: 84%;  display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between; }
+					.recipe_textbox {width:100%;  text-align: center;}
+					.recipe_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+					.recipe_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+					.recipe_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%; }
+
+					.recipe_imgbox {width: 100%; height: 140px;  overflow: hidden; background: #ccc}
+					.recipe_imgbox a img {width: 100%; height: 100%}
+
+
+					.recipe_detailbox {position: relative; width: 27vw; height: 48vw; display: flex; flex-direction: column; justify-content: space-between; padding: 0 0 2% 0}
+					.recipe_detailbox h5 {font-size: 13px; font-weight: normal; letter-spacing: 2px; margin: 1% 0 0 0}
+					.recipe_detailbox a h1 {font-size: 20px; font-weight: normal; line-height:150%;}
+					.recipe_detailbox p {font-size: 14px; line-height:150%; color: #666 }
+					.recipe_detailbox h6 a {font-size: 11px; font-weight: normal; letter-spacing: 2px; color: #333}
+
+					.recipe_detailbox::before {
+						content: "";
+						width: 100%;
+						height:4px;
+						background-color: #eee;
+						position: absolute;
+						bottom: 0px;
+						
+					}
+
+					.recipe_detailbox::after {
+						content: "";
+						width: 0%;
+						height: 4px;
+						background-color: black;
+						position: absolute;
+						bottom: 0px;
+						left: 50%;
+						transform: translateX(-50%);
+
+						
+					}
+
+					@keyframes detailboxBar{
+						100% {width:100%}
+					}
+
+					.recipe_detailbox:hover::after {
+						animation-name: detailboxBar;
+						animation-duration: 0.5s;
+						animation-fill-mode: forwards;
+					}
+
+
+					.recipe_imgbox a img:hover {opacity: 0.5; transition: 0.3s}
+
+
+					/*footer*/
+					footer {width:100%; height:500px; background: #111; display: flex; justify-content: center; align-items: center;}
+					#footerbox_wrap {width: 100%; height: 90%; display: flex; flex-wrap:wrap; justify-content: space-between; text-align: center; align-content: space-between;}
+					.footerbox {width: 30%; height: 90%; padding: 7% 0 0 0; display: flex; flex-direction: column; align-items: center;}
+					.footerbox h6 {font-size: 14px; letter-spacing: 1px; margin: 0 0 5% 0; color: #fff}
+					.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+					.footerbox > p {color: #fff; font-size: 15px; line-height: 20px; margin: 0 0 10px 0}
+					.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+					.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+					#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+
+					.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+
+				}
+
+
+
+
+				@media (min-width: 1000px) {
+					#wrap {width: 100%}
+					/*header*/
+					header {
+						width: 100%; 
+						height: 100px; 
+						background: rgba(0, 0, 0, 0.9);
+						padding: 0;
+						position: fixed;
+						top: 0;
+						z-index: 999;
+					}
+
+					#logo {
+						width: 10%;
+						height: 100%; 
+						float: left;
+						padding: 1%;
+					}
+
+					#logo a img {height: 100%}
+
+					nav {
+						display: block;
+						width:50%;
+						height: 100%;
+						color: #fff;
+						margin: 0 auto;
+						position: static;
+					}
+
+					.main_nav {
+						display: block;
+						width: 100%;
+						height: 100%;
+						float: left;
+						text-align: center;
+						font-size: 14px;
+						font-weight: bold;
+						line-height: 60px;
+					}
+
+					.main_nav > li {
+						width: 16.66%;
+						height: 100%;
+						float: left;
+						line-height: 100px;
+						background-color: transparent;
+						padding-left: 0px;
+						border-bottom: none;
+						position: relative;
+					}
+
+					.main_nav > li:hover {
+						background-color: transparent;
+					}
+
+					.main_nav > li > a {
+						width: 100%;
+						height: 100%;
+						color: #fff;
+						display: inline-block;
+					}
+
+					.sub_nav {
+						width: 230px;
+						position: absolute;
+						top: 100px;
+						z-index: 999;
+						background-color: rgba(0, 0, 0, 0.9);
+						font-weight: normal;
+						display: none;
+						right: -45%;
+						
+					}
+
+					.sub_nav > li {
+						width: 100%;
+						height: 35px;
+						line-height: 35px;
+						text-align: left;
+						padding-left: 35px;
+					}
+
+					.sub_nav > li > a {
+						color: #fff;
+						display: block;
+					}
+
+					.sub_nav > li > a:hover {
+						color: #ccc;
+					}
+
+					
+					#navicons {
+						display: none;
+					}
+
+						/*mainbox:slider*/
+						#slider {
+							width: 100%; 
+							height: 100vh;
+							position: relative; 
+							background-color: #000; 
+							overflow: hidden;
+							top: 0;
+						}
+
+						#slider > .slider_show,
+						#slider > .slider_show > li,
+						#slider > .slider_show > li > img {
+							width: 100%; height: 100vh;
+						}
+
+						#slider > .slider_show > li {
+							position: absolute;
+						}
+
+						#slider > .slider_show > li:not(:first-child){
+							display: none;
+						}
+
+						
+
+						.slider_textbox {position: absolute; top:40%; width: 100%; text-align: center; padding: 0 20%; }
+
+						.slider_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px; color: #fff}
+						.slider_textbox h1{margin: 2% 0; letter-spacing: 25px;  font-size: 73px; color: #fff}
+						.slider_textbox p:nth-of-type(2) {font-size: 14px; line-height: 150%; color: #fff}
+
+						.slider_textbox button {width: 170px; background: #fff; cursor: pointer;text-transform: uppercase; margin: 10% 0 0 0; padding: 15px; font-size: 12px; letter-spacing: 1px; border:none;}
+						.slider_textbox button:hover {background: #333;}
+						.slider_textbox button:hover a {color: #fff;}
+
+
+						/*mainbox:story*/
+						#story {width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; padding: 10% 0;}
+
+						.story_textbox {width: 100%; text-align: center; padding: 0 25% }
+						.story_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+						.story_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+						.story_textbox p:nth-of-type(2) {font-size: 16px; line-height: 180%; color: #666}
+
+						.story_imgbox {width:41%; height: 45%; margin: 4% 2%; }
+						.story_imgbox img {width: 100%; height: 100%}
+
+						.story_signbox {width:100%; text-align: center}
+						.story_signbox p {font-size: 12px; letter-spacing: 2px; line-height:30px; color:#666;}
+
+						/*mainbox:box01*/
+						#box01_wrap {width: 100%; height: 480px; background: #ebebeb; padding: 0; overflow: hidden;}
+						#box01 {width: 100%; height: 480px; margin:0 auto; background: #ebebeb; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 0 5%;}
+
+						.box01_textbox {margin: 0 2% 0 0; height: 50%; display: flex; flex-direction: column; justify-content: space-between;  text-align: left; width: 50%;}
+						.box01_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+						.box01_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+						.box01_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%;}
+						.box01_textbox button {margin: 5% 0 0 0}
+
+						/*mainbox:box02*/
+						#box02_wrap {width: 100%; height: 480px; background: black; position: relative; }
+						#box02_background {width: 100%; height: 100%; background-image: url(../img/box02_slidefixed.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment:fixed; opacity:0.5}
+						.bx2_review_wrap {
+							width: 50%;
+							height: 50%;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							overflow: hidden;
+						}
+
+						.bx2_review {
+							width: 300%;
+							height: 100%;
+							text-align: center;
+							color: #fff;
+						}
+
+						.bx2_review > li {
+							width: 33.3333%;
+							height: 100%;
+							float: left;
+							padding: 0 2.5%;
+							
+						}
+					
+
+						.bx2_review > li > div {
+							width: 80px;
+							height: 80px;
+							border-radius: 100%;
+							overflow: hidden;
+							margin: 0 auto;
+						}
+
+						.bx2_review > li > div > img {
+							width: 80px;
+							height: 80px;
+						}
+
+	
+
+						.bx2_review > li > p {
+							font-size: 16px;
+							margin: 3% 0;
+						}
+
+						.bx2_review > li > span {
+							font-size: 12px;
+							font-weight: bold;
+						}
+
+						
+						
+
+						/*mainbox:menu*/
+						#menu_wrap {width: 100%; height: 770px; display: flex; justify-content: center; align-items: center; padding: 0}
+						#menu {width: 1270px; height: 75%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; align-content: space-between; flex-direction: row}
+
+						.menu_textbox {width:100%; text-align: center; margin: 0 0 2% 0}
+						.menu_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+						.menu_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px; }
+						.menu_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%; color: #666}
+
+						.menu_listbox {width: 45%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: center; align-items: center;}
+						.menu_listbox h5 {font-weight: bold; font-size: 13px; letter-spacing: 1px}
+						.menu_listbox h4 {font-weight: normal; font-size: 18px; }
+						.menu_listbox p {width: 100%; font-size: 14px; color: #666; margin: 2% 0 0 0}
+						.menu_listbox hr {width: 48%; border:none; border-bottom: 1px solid #ddd}
+
+
+						/*mainbox:box03*/
+						#box03_wrap {width: 100%; height: 430px; background: #f9f9fb; display: flex; justify-content: center; padding: 0}
+
+						.box03 {width: 15.5%; height:auto; margin: 0 2%; display: flex; flex-direction:column; justify-content: center; align-items: center;}
+						.box03_imgbox {width: 93px; height: 116px; background: none}
+						.box03_imgbox img {width:100%; height: 100%}
+						.box03_textbox {width: 100%; text-align: center; margin: 5% 0 0 0}
+						.box03_textbox h3 {font-weight: normal; font-size: 15px; letter-spacing: 2px;}
+						.box03_textbox p {font-size: 13px; color: #666; margin:3% 0 0 0}
+
+
+						/*mainbox:reservation*/
+						#reservation_wrap {width: 100%; height: 100vh; background: black; text-align: center;}
+						#reservation {width: 100%; height: 100%; background-image: url(../img/reservations_background_2.jpg); 
+							background-size: cover; background-repeat: no-repeat; background-attachment: fixed; opacity: 0.3; background-position: center;}
+							.reservation_textbox {width:100%; text-align: center; margin: 0 0 2% 0; position: relative; bottom: 83%;}
+							.reservation_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px; color:#fff;}
+							.reservation_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px; color:#fff;}
+							.reservation_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%; color:#fff;}
+
+							.reservation_boardbox {width: 49%; height:30%;  position: relative; bottom: 80%; margin: 0 auto}
+							.reservation_boardbox form {width: 100%; height:100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+							.reservation_boardbox form input {width: 49%; height: 18%; padding: 3%; background: #fff; border: none; color: #666; font-size: 12px; letter-spacing: 1px}
+							.reservation_boardbox form input:last-of-type {width: 100%; height: 36%}
+
+							#reservation_wrap button {position: relative; bottom: 78%; background: none; border: 2px solid #fff; color: #fff}
+							#reservation_wrap button:hover {background: #fff;  transition: all 0.3s}
+							#reservation_wrap button:hover a {color: #000; transition: all 0.3s}
+
+							/*mainbox:today*/
+							#today_wrap {width: 100%; height: 480px;  padding: 0; }
+							#today {width: 1270px; height: 65%; margin: 0 auto;  display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; position: relative; flex-direction: row; background: #fff;}
+
+							#today ul {width: 20%; height: 100%; display: flex; flex-flow: column nowrap; position: absolute; left: 0}
+							#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}	
+
+							.hoverChange {cursor: pointer; background: #eee;} 
+
+
+							.listbox_menu p {font-size: 11px; font-weight: normal; letter-spacing: 2px}
+
+
+							.today_detailbox {width: 80%; height: 100%; display: flex; position: absolute; flex-direction: row; background: #fff;}
+							.detail_textbox {width: 70%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 0 50px 0 20px; text-align: left;}
+							.detail_textbox h1 {font-weight: normal;}
+							.detail_textbox p {line-height: 155%; color: #666}
+							.detail_textbox p:nth-of-type(1) {margin: 40px 0 30px 0}
+							.detail_imgbox {width: 30%; height: 100%; }
+							.detail_imgbox img {width: 100%; height: 100%}
+
+							/*slidemenu*/
+							#slidemenu_wrap {
+								width: 100%; 
+								height:18vw; 
+								margin: 0 auto;
+								position: relative;
+								overflow: hidden;
+							}
+
+							.slidemenu {
+								width: 200%;
+								height:18vw;
+								display: flex;
+								flex-wrap: wrap;
+								overflow: hidden;
+								position: absolute;
+								left: 50%;
+								transform: translateX(-50%);
+							}
+
+							.slidemenu > li {
+								width: 9%;
+								height:18vw;
+								background-color: #000;
+								float: left;
+								margin-right: 0.1%;
+								position: relative;
+							}
+
+							.slidemenu > li > a, 
+							.slidemenu > li > a > img{
+								width: 100%;
+								height:18vw;
+								display: block;
+							}
+
+							.slidemenu > li:hover > a > img{
+								opacity: 0.5;
+								transition: 0.5s;
+							}
+
+							.slidemenu_txt {
+								width: 100%;
+								position: absolute;
+								top: 50%;
+								left: 0;
+								transform: translateY(-50%);
+								text-align: center;
+								color: #fff;
+								overflow: hidden;
+								display: none;
+							}
+
+							.slidemenu_txt > h4 {
+								font-size: 18px;
+								margin-bottom: 5px;
+							}
+
+							.slidemenu_txt > P {
+								text-transform:uppercase;
+								font-size: 12px;
+								letter-spacing: 1px;
+							}
+
+							.slidemenu > li:hover .slidemenu_txt {
+								display: block;
+							}
+
+							#slidemenu_wrap > span {
+								width: 50px;
+								height: 50px;
+								background-color: rgba(0, 0, 0, 0.3);
+								position: absolute;
+								top: 50%;
+								transform: translateY(-50%);
+								border-radius: 100%;
+								border: 2px solid rgba(255, 255, 255, 0.8);
+								text-align: center;
+								line-height: 45px;
+								font-size: 30px;
+								font-weight: bold;
+								color: rgba(255, 255, 255, 0.8);
+								cursor: pointer;
+								display: block;
+							}
+
+							#slidemenu_wrap > span.prev {
+								left: 30px;
+							}
+
+							#slidemenu_wrap > span.next {
+								right: 30px;
+							}
+
+
+							/*mainbox:chef*/
+							#chef_wrap {width: 100%; height: 480px; background: #ebebeb; display: flex; align-items: center; background-image: url(../img/chef_05.png); background-size: cover; background-position: right; background-repeat: no-repeat;}
+							#chef {width: 1270px; height: 100%; margin: 0 auto; display: flex;flex-direction: row; padding: 0; }
+							.chef_textbox {width: 60%; height: 100%; display: flex; flex-direction: column; justify-content: center; text-align: left; padding: 0}
+							.chef_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+							.chef_textbox h1{margin: 2% 0; letter-spacing: 5px; font-size: 40px}
+							.chef_textbox p:nth-of-type(2) {font-size: 18px; line-height: 150%; color: #666; margin: 0 0 2% 0}
+							.chef_textbox button {margin: 3% 0}
+
+							.chef_imgbox {width: 40%; height: 100%; overflow: hidden;}
+							.chef_imgbox > img {height: 100%; display: none}
+
+							/*mainbox:recipe*/
+							#recipe_wrap {width: 100%; height: 100vh;  display: flex; justify-content: center; align-items: center; }
+							#recipe {width: 1270px; height: 80%;  display: flex; flex-wrap: wrap; justify-content: space-between; align-content: flex-start;}
+							.recipe_textbox {width:100%;  text-align: center; margin: 0 0 50px 0}
+							.recipe_textbox p:nth-of-type(1) {letter-spacing: 3px; text-transform: uppercase; font-size: 12px}
+							.recipe_textbox h1{margin: 1% 0; letter-spacing: 5px; font-size: 40px}
+							.recipe_textbox p:nth-of-type(2) {font-size: 16px; line-height: 150%; }
+
+							.recipe_imgbox {width: 100%; height: 48%;  overflow: hidden; background: #ccc}
+							.recipe_imgbox a img {width: 100%; height: 100%}
+
+
+							.recipe_detailbox {width: 29%; height: 500px; display: flex; flex-direction: column; justify-content: space-between; padding: 0 0 2% 0; position: relative;}
+							.recipe_detailbox h5 {font-size: 13px; font-weight: normal; letter-spacing: 2px; margin: 1% 0 0 0}
+							.recipe_detailbox a h1 {font-size: 20px; font-weight: normal; line-height:150%;}
+							.recipe_detailbox p {font-size: 14px; line-height:150%; color: #666 }
+							.recipe_detailbox h6 a {font-size: 11px; font-weight: normal; letter-spacing: 2px; color: #333}
+
+							.recipe_detailbox::before {
+								content: "";
+								width: 100%;
+								height:4px;
+								background-color: #eee;
+								position: absolute;
+								bottom: 0px;
+								
+							}
+
+							.recipe_detailbox::after {
+								content: "";
+								width: 0%;
+								height: 4px;
+								background-color: black;
+								position: absolute;
+								bottom: 0px;
+								left: 50%;
+								transform: translateX(-50%);
+
+								
+							}
+
+							@keyframes detailboxBar{
+								100% {width:100%}
+							}
+
+							.recipe_detailbox:hover::after {
+								animation-name: detailboxBar;
+								animation-duration: 0.5s;
+								animation-fill-mode: forwards;
+							}
+
+							.recipe_imgbox a img:hover {opacity: 0.5; transition: 0.3s}
+
+							/*footer*/
+							footer {width:100%; height:450px; background: #111; display: flex; justify-content: center; align-items: center;}
+							#footerbox_wrap {width: 1270px; height: 90%; display: flex; flex-wrap:wrap; justify-content: space-between; text-align: center; align-content: space-between;}
+							.footerbox {width: 30%; height: 90%; padding: 7% 0 0 0; display: flex; flex-direction: column; align-items: center;}
+							.footerbox h6 {font-size: 14px; letter-spacing: 1px; margin: 0 0 5% 0; color: #fff}
+							.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+							.footerbox > p {color: #fff; font-size: 15px; line-height: 20px; margin: 0 0 10px 0}
+							.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+							.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+							#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+
+							.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+
+						}
+

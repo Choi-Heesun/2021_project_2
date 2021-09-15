@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("i:nth-of-type(3)").click(function(){
+				$("nav").slideToggle();
+			});			
+
+			$(window).resize(function(){
+				if(window.innerWidth >=599){
+					$("nav").show();
+				}
+			});
+
+			$(window).resize(function(){
+				if(window.innerWidth <=1000){
+					$("nav").hide();
+				}
+			});
+
+		});
+	</script>
+
+	<style>
+		*{margin: 0; box-sizing: border-box;}
+		::selection { background:#444; color: #fff }
+		ul, ol, li {list-style: none; padding: 0}
+		a {text-decoration: none; color:#000}
+
+		/**************************************************/
+
+		@media (max-width: 599px) {
+			#wrap {width:100%; }
+
+			header {width: 100%; height: 100px; background: black; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 999;flex-wrap: wrap;}
+
+
+			#logo {width:130px; height:70%; margin: 15px auto;}
+			#logo a img {width:130px; height:100%; margin: 0 auto;  }
+
+
+
+			nav {width: 100%; background: #fff; color: #fff; display: flex; align-items: center; position: absolute; top: 100px; display: none; }
+			nav ul {width: 100%; display: flex; justify-content: space-between; flex-direction: column; }
+			nav ul li {padding: 5px 15px; border-bottom: 1px solid #eee }
+			nav ul li a {color: #888; font-size: 11px; letter-spacing: 1px;}
+			nav ul li:hover {background: black; cursor: pointer;}
+			nav ul li:hover > a {color: #fff}
+
+			#navicons { display: flex; justify-content: space-between; align-items: center; padding: 0 15px 0 0; flex-direction: row-reverse; width: 100%; position: relative; bottom: 50%}
+
+			#navicons i {color: #fff; cursor: pointer; margin:0 0 0 15px;}
+			#navicons i:nth-of-type(2) {position: relative; right: -40%}
+		}
+
+		@media (min-width: 600px) {
+			#wrap {width:100%;}
+
+			header {width: 100%; height: 100px; background: black; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 999;flex-wrap: wrap;}
+
+			#logo {width:130px; height:70%; margin: 15px auto;}
+			#logo a img {width:130px; height:100%; margin: 0 auto;  }
+
+			nav {width: 100%; background: #fff; color: #fff; display: flex; align-items: center; position: absolute; top: 100px; display: block; }
+			nav ul {width: 100%; display: flex; justify-content: space-between; flex-direction: column; }
+			nav ul li {padding: 5px 15px; border-bottom: 1px solid #eee }
+			nav ul li a {color: #888; font-size: 11px; letter-spacing: 1px;}
+			nav ul li:hover {background: black; cursor: pointer;}
+			nav ul li:hover > a {color: #fff}
+
+			#navicons { display: flex; justify-content: space-between; align-items: center; padding: 0 15px 0 0; flex-direction: row-reverse; width: 100%; position: relative; bottom: 50%}
+
+			#navicons i {color: #fff; cursor: pointer; margin:0 0 0 15px;}
+			#navicons i:nth-of-type(2) {position: relative; right: -40%}
+		}
+
+		@media (min-width: 1000px) {
+			#wrap {width:100%;}
+
+			header {width: 100%; height: 100px; background: black; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap;}
+
+			#logo {height: 70%; padding: 0 0 0 15px; margin: 12px 0 }
+			#logo a img {height: 100%}
+
+			nav {background: none; color: #fff; display: flex; align-items: center; display: block; position: static; }
+			nav ul {width: 100%; display: flex; justify-content: center; flex-direction: row}
+			nav ul li {padding: 5px 0; border-bottom: none }
+			nav ul li a {color: #fff; padding: 5px 15px; font-size: 13px; font-weight: bold}
+
+			#navicons {background: pink; display: flex; justify-content: flex-end; align-items: center; padding: 0 15px 0 0; flex-direction: row; width: auto; position: static; opacity: 0}
+			#navicons i {color: #fff; cursor: pointer; margin:0 0 0 15px;}
+			#navicons i:nth-of-type(2) {position: static; right: -40%}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="logo"><a href="#"><img src="img/main_logo_white.png"></a></div>
+			<nav>	
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">OUR MENU</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">SHOP</a></li>
+				</ul>
+			</nav>	
+			<div id="navicons">
+				<i class="far fa-calendar"></i>
+				<i class="fas fa-search"></i>
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+	</div>
+</body>
+</html>

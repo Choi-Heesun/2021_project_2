@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{margin: 0; box-sizing: border-box;}
+		::selection { background:#444; color: #fff }
+		ul, ol, li {list-style: none; padding: 0}
+		a {text-decoration: none; color:#000}
+		button {width: 170px; background: #fff; cursor: pointer;text-transform: uppercase; margin: 3% 0 0 0; padding: 15px; font-size: 11px; letter-spacing: 1px; border:none;}
+		button:hover {background: #333; color: #fff}
+
+
+		/*************************************************************************************/
+		@media (max-width: 599px) {
+			#today_wrap {width: 100%; height: 250vw; padding: 0; background: cyan; display: flex; align-items: center;}
+			#today {width:90%; height:90%; margin: 0 auto; background: coral; display: flex; flex-wrap: wrap; justify-content:space-between; align-items: center; position: relative; flex-direction: column;}
+
+			#today ul {width: 100%; height: 25%; display: flex; flex-flow: column nowrap; background: yellow; position: absolute; top: 0}
+			#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}
+			#today ul li:hover {border-right: 3px solid #000; cursor: pointer; background: #eee; }
+
+			.listbox_menu p {font-size: 14px; font-weight: normal; letter-spacing: 2px}
+
+
+			.today_detailbox {width: 100%; height: 75%;display: flex; background: pink; position: absolute;  flex-direction: column; bottom: 0}
+			.detail_textbox {width: 100%; height: 50%; display: flex; flex-direction: column; justify-content: space-between; background: skyblue; padding:  10% 0}
+			.detail_textbox h1 {font-weight: normal;}
+			.detail_textbox p {line-height: 155%; color: #666}
+
+			.detail_imgbox {width: 100%; height: 50%; background: blue;}
+			.detail_imgbox img {height:100%; display: block; margin: 0 auto}
+		}
+
+		@media (min-width: 600px) {
+			#re {width: 100%; height: 800px; background: green}
+
+			#today_wrap {width: 100%; height: 1000px; padding: 0; background: cyan; display: flex; align-items: center;}
+			#today {width:90%; height:90%; margin: 0 auto; background: coral; display: flex; flex-wrap: nowrap; justify-content:space-between; align-items: center; position: relative; flex-direction: row;}
+
+			#today ul {width: 35%; height: 25%; display: flex; flex-flow: column nowrap; background: yellow; position: absolute; top: 0}
+			#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}
+			#today ul li:hover {border-right: 3px solid #000; cursor: pointer; background: #eee;}
+
+			.listbox_menu p {font-size: 12px; font-weight: normal; letter-spacing: 2px}
+
+
+			.today_detailbox {width: 65%; height: 100%;display: flex; background: pink; position: absolute;  flex-direction: column; right: 0; top:0;}
+			.detail_textbox {width: 100%; height: 50%; display: flex; flex-direction: column; justify-content: space-between; background: skyblue; padding:  0 15px}
+			.detail_textbox h1 {font-weight: normal;}
+			.detail_textbox p {line-height: 155%; color: #666}
+
+			.detail_imgbox {width: 100%; height: 50%; background: blue; overflow: hidden;}
+			.detail_imgbox img {height:100%; display: block; margin: 0 auto}
+		}
+
+		@media (min-width: 1270px) {
+			#re {width: 100%; height: 800px; background: green}
+
+			#today_wrap {width: 100%; height: 480px;  padding: 0; background: cyan; }
+			#today {width: 1270px; height: 65%; margin: 0 auto; background: coral; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; position: relative; flex-direction: row; }
+
+			#today ul {width: 20%; height: 100%; display: flex; flex-flow: column nowrap; background: yellow; position: absolute; left: 0}
+			#today ul li {width: 100%; height:20%; display: flex; align-items: center;  border-right: 3px solid #eee; padding:0 10px;}
+			#today ul li:hover {border-right: 3px solid #000; cursor: pointer; background: #eee;}
+
+			.listbox_menu p {font-size: 11px; font-weight: normal; letter-spacing: 2px}
+
+
+			.today_detailbox {width: 80%; height: 100%; display: flex; background: pink; position: absolute; flex-direction: row}
+			.detail_textbox {width: 70%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; background: skyblue; padding: 0 15px}
+			.detail_textbox h1 {font-weight: normal;}
+			.detail_textbox p {line-height: 155%; color: #666}
+
+			.detail_imgbox {width: 30%; height: 100%; background: blue; }
+			.detail_imgbox img {width: 100%; height: 100%}
+ 
+		}
+
+
+
+
+	</style>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".listbox_menu:nth-of-type(1)").click(function(){
+				$(".today_detailbox:nth-of-type(1)").show();
+				$(".today_detailbox:nth-of-type(2)").hide();
+				$(".today_detailbox:nth-of-type(3)").hide();
+				$(".today_detailbox:nth-of-type(4)").hide();
+				$(".today_detailbox:nth-of-type(5)").hide();
+				$(".today_detailbox:nth-of-type(6)").hide();
+			});
+
+			$(".listbox_menu:nth-of-type(2)").click(function(){
+				$(".today_detailbox:nth-of-type(2)").show();
+				$(".today_detailbox:nth-of-type(1)").hide();
+				$(".today_detailbox:nth-of-type(3)").hide();
+				$(".today_detailbox:nth-of-type(4)").hide();
+				$(".today_detailbox:nth-of-type(5)").hide();
+				$(".today_detailbox:nth-of-type(6)").hide();
+			});
+
+			$(".listbox_menu:nth-of-type(3)").click(function(){
+				$(".today_detailbox:nth-of-type(3)").show();
+				$(".today_detailbox:nth-of-type(2)").hide();
+				$(".today_detailbox:nth-of-type(1)").hide();
+				$(".today_detailbox:nth-of-type(4)").hide();
+				$(".today_detailbox:nth-of-type(5)").hide();
+				$(".today_detailbox:nth-of-type(6)").hide();
+			});
+
+			$(".listbox_menu:nth-of-type(4)").click(function(){
+				$(".today_detailbox:nth-of-type(4)").show();
+				$(".today_detailbox:nth-of-type(2)").hide();
+				$(".today_detailbox:nth-of-type(3)").hide();
+				$(".today_detailbox:nth-of-type(1)").hide();
+				$(".today_detailbox:nth-of-type(5)").hide();
+				$(".today_detailbox:nth-of-type(6)").hide();
+			});
+
+			$(".listbox_menu:nth-of-type(5)").click(function(){
+				$(".today_detailbox:nth-of-type(5)").show();
+				$(".today_detailbox:nth-of-type(2)").hide();
+				$(".today_detailbox:nth-of-type(3)").hide();
+				$(".today_detailbox:nth-of-type(4)").hide();
+				$(".today_detailbox:nth-of-type(1)").hide();
+				$(".today_detailbox:nth-of-type(6)").hide();
+			});
+
+			$(".listbox_menu:nth-of-type(6)").click(function(){
+				$(".today_detailbox:nth-of-type(6)").show();
+				$(".today_detailbox:nth-of-type(2)").hide();
+				$(".today_detailbox:nth-of-type(3)").hide();
+				$(".today_detailbox:nth-of-type(4)").hide();
+				$(".today_detailbox:nth-of-type(5)").hide();
+				$(".today_detailbox:nth-of-type(1)").hide();
+			});
+
+
+		});
+
+
+	</script>
+</head>
+<body>
+	<div id="wrap">
+
+		<div id="re"></div>
+
+		<div id="today_wrap">
+			<div id="today">
+				<ul id="today_listbox">
+					<li class="listbox_menu">
+						<p>CHEESE CROISSANTS</p>
+					</li>
+
+					<li class="listbox_menu">
+						<p>BRUSCHETTI</p>
+					</li>
+
+					<li class="listbox_menu">
+						<p>AWESOME VEGETABLES</p>
+					</li>
+
+					<li class="listbox_menu">
+						<p>TASTY SNACKS</p>
+					</li>
+
+					<li class="listbox_menu">
+						<p>ALL-TIME BEST RECIPES</p>
+					</li>
+
+					<li class="listbox_menu">
+						<p>MEAL FOR WHOLE FAMILY</p>
+					</li>
+
+				</ul>
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>TODAY’S BEST OFFER</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_01.jpg"></div>
+				</div>
+
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>SMALL BITE</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_02.jpg"></div>
+				</div>
+
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>TODAY’S MENU</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_03.jpg"></div>
+				</div>
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>TRY OUR SNACKS</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_04.jpg"></div>
+				</div>
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>EXOTIC TASTE</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_05.jpg"></div>
+				</div>
+
+				<div class="today_detailbox">
+					<div class="detail_textbox">
+						<h1>OFFER FOR DESSERTS</h1>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+					</div>
+					<div class="detail_imgbox"><img src="img/today_detail_06.jpg"></div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

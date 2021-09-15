@@ -1,0 +1,794 @@
+@charset "utf-8";
+
+@media (max-width: 599px) {
+	#wrap {width: 100%}
+
+
+	/*header*/
+	header {
+		width: 100%; 
+		height: 100px; 
+		background: #fff;
+		padding: 1%;
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
+
+	#logo {
+		width: 10%;
+		height: 100%; 
+		float: left;
+		padding: 2%;
+	}
+
+	#logo a img {height: 100%}
+
+	nav {
+		display: none;
+		width:50%;
+		height: 90%;
+		color: #fff;
+		margin: 0 auto;
+		position: absolute;
+		top: 100px;
+		right: 0;
+	}
+
+	.main_nav {
+		display: block;
+		width: 100%;
+		height: 100%;
+		float: left;
+		text-align: left;
+		font-size: 12px;
+		font-weight: normal;
+		letter-spacing: 1px;
+	}
+
+	.main_nav > li {
+		width: 100%;
+		height: 40px;
+		float: left;
+		line-height: 40px;
+		background-color: white;
+		padding-left: 10px;
+		border-bottom: 1px solid #eee;
+		position: relative;
+	}
+
+	.main_nav > li:hover {
+		background-color: #000;
+	}
+
+	.main_nav > li:hover > a {
+		color: #fff;
+	}
+
+	.main_nav > li > a {
+		width: 100%;
+		height: 100%;
+		color: #777;
+		display: inline-block;
+	}
+
+	.sub_nav {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 999;
+		background-color: rgba(0, 0, 0, 0.9);
+		font-weight: normal;
+		display: none;
+		right: 100%;
+	}
+
+	.sub_nav > li {
+		width: 100%;
+		height: 35px;
+		line-height: 35px;
+		text-align: left;
+		padding-left: 35px;
+	}
+
+	.sub_nav > li > a {
+		color: #fff;
+		display: block;
+	}
+
+	.sub_nav > li > a:hover {
+		color: #ccc;
+	}
+
+	
+	#navicons {
+		display: block;
+		float: right;
+		color: #000;
+		width: 15%;
+		height: 100%;
+		line-height: 80px;
+	}
+
+	#navicons > li {
+		float: left;
+		width: 33.33%;
+		text-align: center;
+		cursor: pointer;
+	}
+
+		/*sub*/
+
+		#sub {width:100%; height: auto; margin: 100px 0 0 0}
+
+		#sub_slide {width: 100%; height: 300px; display: flex; align-items: center; background-image: url(../img/blog_background.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; flex-direction: column; justify-content: center;}
+		#sub_slide h1 {width: 90%; margin: 0 auto; color:#fff; font-size: 50px; font-family: 'Spectral SC', serif; font-weight: 700; text-transform: uppercase;}
+		#sub_slide p {width: 90%;color: #fff; font-size: 12px; letter-spacing: 1px; line-height: 150%}
+
+		#sub_bodywrap {width: 100%; margin: 100px auto; display: flex; justify-content: space-between; flex-direction: column; align-items: center;}
+
+		#sub_column {width: 90%;}
+
+		/**	column_body**/	
+		#column_body h3 {margin: 0 0 15px 0; font-size: 20px; padding: 0 0 10px 0; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+		#column_body .column_img {margin: 0 0 35px 0;}
+		#column_body .column_img img {width: 100%}
+		#column_body h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+		#column_body h1 {margin: 25px 0; font-size: 32px; font-family: 'Spectral SC', serif; text-transform: uppercase;}
+		#column_body p {font-size: 16px; color: #555; line-height: 150%; margin: 0 0 20px 0; text-align: left;}
+		#column_body p:nth-of-type(2) {font-size: 21px; padding: 0 30px }
+
+		/**tag_bar**/	
+		#tag_bar {width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: flex-start;  margin: 100px 0 40px 0; flex-direction: column;}
+		#tag_bar button {width: 100px; color: #999; border: 1px solid #eee; margin: 0px; padding: 0; height: 35px}
+		#tag_bar button:nth-of-type(2) {margin: 0 10px}
+		#tag_bar button:hover {background: #eee}
+		#tag_bar > .icon_box {height: 100%; display: flex; align-items: center}
+		#tag_bar > .icon_box p {font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #999}
+		#tag_bar > .icon_box p span a {color: #999}
+		#tag_bar > .icon_box p i {margin: 0 5px; color: #999 }
+		#tag_bar > .icon_box p i:hover {color: black}
+		#tag_bar > .icon_box p span a:hover {color: black}
+
+		/**columnist_profile**/
+		#columnist_profile {padding: 20px 0; display: flex; justify-content: space-evenly; align-items: flex-start; border: 1px solid #eee; margin: 0 0 40px 0; }
+		.columnist_img {width:100px; height: 100px; border-radius: 100%; overflow: hidden;}
+		.columnist_img img {width:100%; height: 100%;}
+		.columnist_txt {width: 60%; height: 150px; display: flex; flex-direction: column; justify-content: space-between;}
+
+		.columnist_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+		.columnist_txt p {font-size: 14px; color: #555; line-height: 150%; text-align: justify; }
+
+		.columnist_txt > .icon_box {display: flex;}
+		.columnist_txt > .icon_box p {font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #555}
+		.columnist_txt > .icon_box p i {margin: 0 5px; color: #555 }
+		.columnist_txt > .icon_box p i:hover {color: black}
+
+		/**comment_box**/
+		#comment_box {width: 100%; padding: 20px 0; border-top: 2px solid #eee; border-bottom: 2px solid #eee; }
+		#comment_box h3 {margin: 0 0 15px 0; font-size: 20px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+		#comment_box ul {display: flex; flex-flow: column wrap; }
+
+		#comment_box ul li {display: flex; padding: 5px; justify-content: space-evenly; align-items: center; }
+		#comment_box ul hr {margin: 15px 0; border: 0; border-top:1px solid #eee;}
+		#comment_box ul li .comment_img {width: 70px; height: 70px; border-radius: 100%; overflow: hidden;}
+		#comment_box ul li .comment_img img {width: 100%; height: 100%;}
+		#comment_box ul li .comment_txt {width: 70%}
+		#comment_box ul li .comment_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+		#comment_box ul li .comment_txt p {font-size: 15px; color: #555; margin: 10px 0}
+
+		#comment_box ul li .comment_txt .date_bar {display: flex; width: 100%; justify-content: space-between;}
+		#comment_box ul li .comment_txt .date_bar > p {font-size: 11px; letter-spacing: 1px; margin: 0; color: #999} 
+		#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2) {cursor:pointer;}
+		#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2):hover {color: #000}
+
+		/**comment_board**/
+		#comment_board {display: flex; flex-flow: column wrap; margin: 40px 0 0 0; padding: 20px 0 0 0; display: flex; flex-wrap: wrap;}
+		#comment_board h3 {margin: 0 0 20px 0; font-size: 18px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+		#comment_board input[type="text"] {width: 100%; height: 50px; font-size: 13px; letter-spacing: 1px; margin: 0 0 10px 0; border: 2px solid #eee; padding: 10px;}
+		#comment_board input[type="text"]:first-of-type {height: 150px; }
+		#comment_board input[type="text"]::placeholder {color: #888; font-size: 11px;}
+		#comment_board label {width: 100%; font-size: 14px; margin: 0 0 20px 0}
+		#comment_board label input[type="checkbox"] {margin: 0 7px 0 0; }
+		#comment_board button {margin: 0; background: #eee}
+		#comment_board button:hover {background: #333; color:#fff;}
+
+		/**sub_info**/
+		#sub_info {width: 90%; margin: 60px 0 0 0}
+		#sub_info h3 {margin: 50px 0 15px 0; font-size: 20px; padding: 0 0 10px 0; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+		#sub_info #about_me h3 {margin: 0 0 15px 0}
+
+		/**about_me**/			
+
+		.about_img {width: 100%; height: 0.5hw; overflow: hidden}
+		.about_img img { width: 100%; height: 100%}
+		#about_me p {font-size: 15px; color: #666; line-height: 150%; margin: 10px 0; }
+		#about_me h5 a {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: #999; font-weight: bold}
+		#about_me h5 a:hover {color: #000}
+
+		/**categories**/	
+		#categories ul li {padding: 7px 0 0 0; }
+		#categories ul li:first-of-type {padding: 0}
+		#categories ul li a {font-size: 13px; letter-spacing: 2px; color: #777}
+		#categories ul li a:hover {color: #000}
+
+		/**latest_posts**/	
+
+		#latest_posts ul li {cursor: pointer; padding: 15px 0; display: flex; justify-content: flex-start; align-items: center; border-bottom: 2px solid #eee}
+		#latest_posts ul li:nth-of-type(1) {padding:0 0 15px 0;}
+
+		#latest_posts ul li .latest_img {width: 70px; height: 70px; border-radius:100%; overflow: hidden;}
+		#latest_posts ul li .latest_img img {width: 100%; height: 100%}
+		#latest_posts ul li .latest_txt {width: 70%; margin: 0 0 0 20px }
+		#latest_posts ul li .latest_txt h5 {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: gray}
+		#latest_posts ul li .latest_txt p {font-size: 18px; margin: 5px 0 0 0 ;color: #555}
+
+		/**follow_me**/	
+		.follow_ibox {display: flex; justify-content: flex-start;}
+		#follow_me a {display: block; width: 55px; height: 55px; text-align: center; display: flex; justify-content: center; align-items: center; border:2px solid #eee; margin: 0 15px 0 0}
+		#follow_me a i {font-size:23px; color: gray}
+		#follow_me a:hover {background: #eee}
+
+		/**instagram_feed**/	
+		#feed_box {width: 100%; height: 80vw; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+		.feed_box {width: 32%;  height: 32% ; overflow: hidden}
+		.feed_box a img {width: 100%; height: 100%;}
+		.feed_box a img:hover {opacity: 0.5}
+
+		/**tags**/
+		#tags ul {display: flex; flex-wrap: wrap; }
+		#tags ul li {padding: 6px 10px; border: 2px solid #eee; margin: 0 7px 7px 0}
+		#tags ul li a {color: gray; font-size: 12px; letter-spacing: 1px;}
+		#tags ul li:hover {background: #333; border: 2px solid #333;}
+		#tags ul li:hover a {color: #fff;}
+
+		/*footer*/
+		footer {width:100%; background: #111; display: flex; justify-content: center; align-items: center; padding: 15% 0}
+		#footerbox_wrap {width: 70%; height: 500px; display: flex; flex-direction: column; text-align: center; justify-content: space-between;}
+		.footerbox {width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+		.footerbox h6 {font-size: 14px; letter-spacing: 1px; color: #fff; line-height: 150%}
+		.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+		.footerbox > p {color: #fff; font-size: 12px; line-height: 150%; margin: 10px 0}
+		.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+		.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+		#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+
+		.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@media (min-width: 600px) {
+
+		#wrap {width: 100%}
+
+		/*header*/
+
+		header {
+			width: 100%; 
+			height: 100px; 
+			background: #fff;
+			padding: 1%;
+			position: fixed;
+			top: 0;
+			z-index: 999;
+		}
+
+		#logo {
+			width: 10%;
+			height: 100%; 
+			float: left;
+			padding: 1%;
+		}
+
+		#logo a img {height: 100%}
+
+		nav {
+			display: none;
+			width:30%;
+			height: 90%;
+			color: #000;
+			margin: 0 auto;
+			position: absolute;
+			top: 100px;
+			right: 0;
+		}
+
+		.main_nav {
+			display: block;
+			width: 100%;
+			height: 100%;
+			float: left;
+			text-align: left;
+			font-size: 12px;
+			font-weight: normal;
+			letter-spacing: 1px;
+		}
+
+		.main_nav > li {
+			width: 100%;
+			height: 40px;
+			float: left;
+			line-height: 40px;
+			background-color: white;
+			padding-left: 10px;
+			border-bottom: 1px solid #eee;
+			position: relative;
+		}
+
+		.main_nav > li:hover {
+			background-color: #000;
+		}
+
+		.main_nav > li:hover > a {
+			color: #fff;
+		}
+
+		.main_nav > li > a {
+			width: 100%;
+			height: 100%;
+			color: #777;
+			display: inline-block;
+		}
+
+		.sub_nav {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 999;
+			background-color: rgba(0, 0, 0, 0.9);
+			font-weight: normal;
+			display: none;
+			right: 100%;
+		}
+
+		.sub_nav > li {
+			width: 100%;
+			height: 35px;
+			line-height: 35px;
+			text-align: left;
+			padding-left: 35px;
+		}
+
+		.sub_nav > li > a {
+			color: #fff;
+			display: block;
+		}
+
+		.sub_nav > li > a:hover {
+			color: #ccc;
+		}
+
+		
+		#navicons {
+			display: block;
+			float: right;
+			color: #000;
+			width: 15%;
+			height: 100%;
+			line-height: 80px;
+		}
+
+		#navicons > li {
+			float: left;
+			width: 33.33%;
+			text-align: center;
+			cursor: pointer;
+		}
+
+
+
+
+
+			/*sub*/
+			#sub {width:100%; height: auto; margin: 100px 0 0 0}
+
+			#sub_slide {width: 100%; height: 300px; display: flex; align-items: center; background-image: url(../img/blog_background.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; flex-direction: column; justify-content: center;}
+			#sub_slide h1 {width: 90%; margin: 0 auto; color:#fff; font-size: 50px; font-family: 'Spectral SC', serif; font-weight: 700; text-transform: uppercase;}
+			#sub_slide p {width: 90%;color: #fff; font-size: 12px; letter-spacing: 1px; line-height: 150%}
+
+			#sub_bodywrap {width: 100%; margin: 100px auto; display: flex; justify-content: space-between; flex-direction: column; align-items: center;}
+
+			#sub_column {width: 90%;}
+
+			/**	column_body**/	
+			#column_body h3 {margin: 0 0 30px 0; font-size: 20px; padding: 0 0 10px 0; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+			#column_body .column_img {margin: 0 0 35px 0;}
+			#column_body .column_img img {width: 100%}
+			#column_body h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+			#column_body h1 {margin: 25px 0; font-size: 32px; font-family: 'Spectral SC', serif; text-transform: uppercase;}
+			#column_body p {font-size: 16px; color: #555; line-height: 150%; margin: 0 0 20px 0; text-align: left;}
+			#column_body p:nth-of-type(2) {font-size: 21px; padding: 0 30px }
+
+			/**tag_bar**/	
+			#tag_bar {width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: flex-start;  margin: 100px 0 40px 0; flex-direction: column;}
+			#tag_bar button {width: 100px; color: #999; border: 1px solid #eee; margin: 0px; padding: 0; height: 35px}
+			#tag_bar button:nth-of-type(2) {margin: 0 10px}
+			#tag_bar button:hover {background: #eee}
+			#tag_bar > .icon_box {height: 100%; display: flex; align-items: center}
+			#tag_bar > .icon_box p {font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #999}
+			#tag_bar > .icon_box p span a {color: #999}
+			#tag_bar > .icon_box p i {margin: 0 5px; color: #999 }
+			#tag_bar > .icon_box p i:hover {color: black}
+			#tag_bar > .icon_box p span a:hover {color: black}
+
+			/**columnist_profile**/
+			#columnist_profile {padding: 20px 0; display: flex; justify-content: space-evenly; align-items: flex-start; border: 1px solid #eee; margin: 0 0 40px 0; }
+			.columnist_img {width:100px; height: 100px; border-radius: 100%; overflow: hidden;}
+			.columnist_img img {width:100%; height: 100%;}
+			.columnist_txt {width: 60%; height: 150px; display: flex; flex-direction: column; justify-content: space-between;}
+
+			.columnist_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+			.columnist_txt p {font-size: 14px; color: #555; line-height: 150%; text-align: justify; }
+
+			.columnist_txt > .icon_box {display: flex;}
+			.columnist_txt > .icon_box p {font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #555}
+			.columnist_txt > .icon_box p i {margin: 0 5px; color: #555 }
+			.columnist_txt > .icon_box p i:hover {color: black}
+
+			/**comment_box**/
+			#comment_box {width: 100%; padding: 20px 0; border-top: 2px solid #eee; border-bottom: 2px solid #eee; }
+			#comment_box h3 {margin: 0 0 20px 0; font-size: 18px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+			#comment_box ul {display: flex; flex-flow: column wrap; }
+
+			#comment_box ul li {display: flex; padding: 5px; justify-content: space-evenly; align-items: center; }
+			#comment_box ul hr {margin: 15px 0; border: 0; border-top:1px solid #eee;}
+			#comment_box ul li .comment_img {width: 70px; height: 70px; border-radius: 100%; overflow: hidden;}
+			#comment_box ul li .comment_img img {width: 100%; height: 100%;}
+			#comment_box ul li .comment_txt {width: 70%}
+			#comment_box ul li .comment_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+			#comment_box ul li .comment_txt p {font-size: 15px; color: #555; margin: 10px 0}
+
+			#comment_box ul li .comment_txt .date_bar {display: flex; width: 100%; justify-content: space-between;}
+			#comment_box ul li .comment_txt .date_bar > p {font-size: 11px; letter-spacing: 1px; margin: 0; color: #999} 
+			#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2) {cursor:pointer;}
+			#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2):hover {color: #000}
+
+			/**comment_board**/
+			#comment_board {display: flex; flex-flow: column wrap; margin: 40px 0 0 0; padding: 20px 0 0 0; display: flex; flex-wrap: wrap;}
+			#comment_board h3 {margin: 0 0 20px 0; font-size: 20px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+			#comment_board input[type="text"] {width: 100%; height: 50px; font-size: 13px; letter-spacing: 1px; margin: 0 0 10px 0; border: 2px solid #eee; padding: 10px;}
+			#comment_board input[type="text"]:first-of-type {height: 150px; }
+			#comment_board input[type="text"]::placeholder {color: #888; font-size: 11px;}
+			#comment_board label {width: 100%; font-size: 14px; margin: 0 0 20px 0}
+			#comment_board label input[type="checkbox"] {margin: 0 7px 0 0; }
+			#comment_board button {margin: 0; background: #eee}
+			#comment_board button:hover {background: #333; color: #fff}
+
+			/**sub_info**/
+			#sub_info {width: 90%; margin: 60px 0 0 0}
+			#sub_info h3 {width: 100%; margin: 50px 0 15px 0; font-size: 20px; padding: 0 0 10px 0;font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+			#sub_info #about_me h3 {margin: 0 0 15px 0}
+
+			/**about_me**/			
+			#about_me {display: flex; flex-wrap: wrap; justify-content: space-between;}
+			.about_img {width: 40%; height: 0.5hw; overflow: hidden}
+			.about_img img { width: 100%; height: 100%}
+			.about_txt {width:55%;}
+			.about_txt p {font-size: 15px; color: #666; line-height: 150%; margin: 0 0 10px 0;}
+			.about_txt h5 a {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: #999; font-weight: bold; width:50%;}
+			.about_txt h5 a:hover {color: #000}
+
+			/**categories**/	
+			#categories ul li {padding: 7px 0 0 0; }
+			#categories ul li:first-of-type {padding: 0}
+			#categories ul li a {font-size: 13px; letter-spacing: 2px; color: #777}
+			#categories ul li a:hover {color: #000}
+
+			/**latest_posts**/	
+
+			#latest_posts ul li {cursor: pointer; padding: 15px 0; display: flex; justify-content: flex-start; align-items: center; border-bottom: 2px solid #eee}
+			#latest_posts ul li:nth-of-type(1) {padding:0 0 15px 0;}
+
+			#latest_posts ul li .latest_img {width: 70px; height: 70px; border-radius:100%; overflow: hidden;}
+			#latest_posts ul li .latest_img img {width: 100%; height: 100%}
+			#latest_posts ul li .latest_txt {width: 70%; margin: 0 0 0 20px }
+			#latest_posts ul li .latest_txt h5 {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: gray}
+			#latest_posts ul li .latest_txt p {font-size: 18px; margin: 5px 0 0 0 ;color: #555}
+
+			/**follow_me**/	
+			.follow_ibox {display: flex; justify-content: flex-start;}
+			#follow_me a {display: block; width: 55px; height: 55px; text-align: center; display: flex; justify-content: center; align-items: center; border:2px solid #eee; margin: 0 15px 0 0}
+			#follow_me a i {font-size:23px; color: gray}
+			#follow_me a:hover {background: #eee}
+
+			/**instagram_feed**/	
+			#feed_box {width: 100%; height: 80vw; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+			.feed_box {width: 32%;  height: 32% ; overflow: hidden}
+			.feed_box a img {width: 100%; height: 100%;}
+			.feed_box a img:hover {opacity: 0.5}
+
+			/**tags**/
+			#tags ul {display: flex; flex-wrap: wrap; }
+			#tags ul li {padding: 6px 10px; border: 2px solid #eee; margin: 0 7px 7px 0}
+			#tags ul li a {color: gray; font-size: 12px; letter-spacing: 1px;}
+			#tags ul li:hover {background: #333; border: 2px solid #333;}
+			#tags ul li:hover a {color: #fff;}
+			/*footer*/
+			footer {width:100%; height:450px; background: #111; display: flex; justify-content: center; align-items: center;}
+			#footerbox_wrap {width: 1270px; height: 90%; display: flex; flex-wrap:wrap; justify-content: space-between; text-align: center; align-content: space-between;}
+			.footerbox {width: 30%; height: 90%; padding: 7% 0 0 0; display: flex; flex-direction: column; align-items: center;}
+			.footerbox h6 {font-size: 14px; letter-spacing: 1px; margin: 0 0 5% 0; color: #fff}
+			.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+			.footerbox > p {color: #fff; font-size: 15px; line-height: 20px; margin: 0 0 10px 0}
+			.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+			.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+			#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+			.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@media (min-width: 1000px) {
+			#wrap {width: 100%}
+			/*header*/
+			header {
+				width: 100%; 
+				height: 100px; 
+				background: #fff;
+				padding: 0;
+				position: fixed;
+				top: 0;
+				z-index: 999;
+			}
+
+			#logo {
+				width: 10%;
+				height: 100%; 
+				float: left;
+				padding: 1%;
+			}
+
+			#logo a img {height: 100%}
+
+			nav {
+				display: block;
+				width:50%;
+				height: 100%;
+				color: #fff;
+				margin: 0 auto;
+				position: static;
+			}
+
+			.main_nav {
+				display: block;
+				width: 100%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 60px;
+			}
+
+			.main_nav > li {
+				width: 16.66%;
+				height: 100%;
+				float: left;
+				line-height: 100px;
+				background-color: transparent;
+				padding-left: 0px;
+				border-bottom: none;
+				position: relative;
+			}
+
+			.main_nav > li:hover {
+				background-color: transparent;
+			}
+
+			.main_nav > li:hover > a {
+				color: #000;
+			}
+
+			.main_nav > li > a {
+				width: 100%;
+				height: 100%;
+				color: #000;
+				display: inline-block;
+			}
+
+			.sub_nav {
+				width: 230px;
+				position: absolute;
+				top: 100px;
+				z-index: 999;
+				background-color: rgba(0, 0, 0, 0.9);
+				font-weight: normal;
+				display: none;
+				right: -45%;
+				
+			}
+
+			.sub_nav > li {
+				width: 100%;
+				height: 35px;
+				line-height: 35px;
+				text-align: left;
+				padding-left: 35px;
+			}
+
+			.sub_nav > li > a {
+				color: #fff;
+				display: block;
+			}
+
+			.sub_nav > li > a:hover {
+				color: #ccc;
+			}
+
+			
+			#navicons {
+				display: none;
+			}
+
+
+
+
+				/*sub*/
+
+				#sub {width:100%; height: auto; margin: 100px 0 0 0}
+
+				#sub_slide {width: 100%; height: 300px; display: flex; align-items: center; background-image: url(../img/blog_background.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; flex-direction:column; justify-content: center; }
+				#sub_slide h1 {width: 1270px ;margin: 0 auto; color:#fff; font-size: 50px; font-family: 'Spectral SC', serif; font-weight: 700; text-transform: uppercase; }
+				#sub_slide p {width: 1270px ;color: #fff; font-size: 12px; letter-spacing: 1px; line-height: 150%}
+
+				#sub_bodywrap {width: 1270px; margin: 100px auto; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-start;}
+
+				#sub_column {width: 65%;}
+
+				/**	column_body**/	
+				#column_body h3 {margin: 0 0 20px 0; font-size: 20px; padding: 0 0 10px 0;  font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+				#column_body .column_img {margin: 0 0 35px 0;}
+				#column_body .column_img img {width: 100%}
+				#column_body h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+				#column_body h1 {margin: 25px 0; font-size: 32px; font-family: 'Spectral SC', serif; text-transform: uppercase;}
+				#column_body p {font-size: 16px; color: #555; line-height: 150%; margin: 0 0 20px 0; text-align: justify;}
+				#column_body p:nth-of-type(2) {font-size: 21px; padding: 0 30px }
+
+				/**tag_bar**/	
+				#tag_bar {width: 100%; height: 35px; display: flex; justify-content: space-between; align-items: center;  margin: 100px 0 40px 0; flex-direction: row}
+				#tag_bar button {width: 100px; color: #999; border: 1px solid #eee; margin: 0px; padding: 0; height: 35px}
+				#tag_bar button:nth-of-type(2) {margin: 0 10px}
+				#tag_bar button:hover {background: #eee}
+				#tag_bar > .icon_box {height: 100%; display: flex; align-items: center}
+				#tag_bar > .icon_box p {font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #999}
+				#tag_bar > .icon_box p span a {color: #999}
+				#tag_bar > .icon_box p i {margin: 0 5px; color: #999 }
+				#tag_bar > .icon_box p i:hover {color: black}
+				#tag_bar > .icon_box p span a:hover {color: black}
+
+				/**columnist_profile**/
+				#columnist_profile {padding: 20px 0; display: flex; justify-content: space-evenly; align-items: center; border: 1px solid #eee; margin: 0 0 40px 0; }
+				.columnist_img {width:100px; height: 100px; border-radius: 100%; overflow: hidden;}
+				.columnist_img img {width:100%; height: 100%;}
+				.columnist_txt {width: 80%; height: 100px; display: flex; flex-direction: column; justify-content: space-between;}
+
+				.columnist_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+				.columnist_txt p {font-size: 14px; color: #555; line-height: 150%; text-align: justify; }
+
+				.columnist_txt > .icon_box {display: flex;}
+				.columnist_txt > .icon_box p {font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #555}
+				.columnist_txt > .icon_box p i {margin: 0 5px; color: #555 }
+				.columnist_txt > .icon_box p i:hover {color: black}
+
+				/**comment_box**/
+				#comment_box {width: 100%; padding: 20px 0; border-top: 2px solid #eee; border-bottom: 2px solid #eee; }
+				#comment_box h3 {margin: 0 0 20px 0; font-size: 20px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+				#comment_box ul {display: flex; flex-flow: column wrap; }
+
+				#comment_box ul li {display: flex; padding: 5px; justify-content: space-evenly; align-items: center; }
+				#comment_box ul hr {margin: 15px 0; border: 0; border-top:1px solid #eee;}
+				#comment_box ul li .comment_img {width: 70px; height: 70px; border-radius: 100%; overflow: hidden;}
+				#comment_box ul li .comment_img img {width: 100%; height: 100%;}
+				#comment_box ul li .comment_txt {width: 80%}
+				#comment_box ul li .comment_txt h5 {letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-weight: normal;}
+				#comment_box ul li .comment_txt p {font-size: 15px; color: #555; margin: 10px 0}
+
+				#comment_box ul li .comment_txt .date_bar {display: flex; width: 100%; justify-content: space-between;}
+				#comment_box ul li .comment_txt .date_bar > p {font-size: 11px; letter-spacing: 1px; margin: 0; color: #999} 
+				#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2) {cursor:pointer;}
+				#comment_box ul li .comment_txt .date_bar > p:nth-of-type(2):hover {color: #000}
+
+				/**comment_board**/
+				#comment_board {display: flex; flex-flow: column wrap; margin: 40px 0 0 0; padding: 20px 0 0 0; display: flex; flex-wrap: wrap;}
+				#comment_board h3 {margin: 0 0 20px 0; font-size: 20px; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+
+				#comment_board input[type="text"] {width: 100%; height: 50px; font-size: 13px; letter-spacing: 1px; margin: 0 0 10px 0; border: 2px solid #eee; padding: 10px;}
+				#comment_board input[type="text"]:first-of-type {height: 150px; }
+				#comment_board input[type="text"]::placeholder {color: #888; font-size: 11px;}
+				#comment_board label {width: 100%; font-size: 14px; margin: 0 0 20px 0}
+				#comment_board label input[type="checkbox"] {margin: 0 7px 0 0; }
+				#comment_board button {margin: 0; background: #eee}
+				#comment_board button:hover {background: #333; color: #fff}
+				
+
+				/**sub_info**/
+				#sub_info {width: 28%; margin: 0}
+				#sub_info h3 {width: 100%; margin: 50px 0 15px 0; font-size: 20px; padding: 0 0 10px 0; font-family: 'Spectral SC', serif; text-transform: uppercase; font-weight: 500}
+				#sub_info #about_me h3 {margin: 0 0 15px 0}
+
+				/**about_me**/			
+
+				.about_img {width: 100%; height: 210px; overflow: hidden; }
+				.about_img img { width: 100%; height: 100%}
+				.about_txt {width: 100%}
+				.about_txt p {font-size: 15px; color: #666; line-height: 150%; margin: 10px 0; }
+				.about_txt h5 a {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: #999; font-weight: bold}
+				.about_txt h5 a:hover {color: #000}
+
+				/**categories**/	
+				#categories ul li {padding: 7px 0 0 0; }
+				#categories ul li:first-of-type {padding: 0}
+				#categories ul li a {font-size: 13px; letter-spacing: 2px; color: #777}
+				#categories ul li a:hover {color: #000}
+
+				/**latest_posts**/	
+
+				#latest_posts ul li {cursor: pointer; padding: 15px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee}
+				#latest_posts ul li:nth-of-type(1) {padding:0 0 15px 0;}
+
+				#latest_posts ul li .latest_img {width: 70px; height: 70px; border-radius:100%; overflow: hidden;}
+				#latest_posts ul li .latest_img img {width: 100%; height: 100%}
+				#latest_posts ul li .latest_txt {width: 70%; }
+				#latest_posts ul li .latest_txt h5 {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: normal; color: gray}
+				#latest_posts ul li .latest_txt p {font-size: 18px; margin: 5px 0 0 0 ;color: #555}
+
+				/**follow_me**/	
+				.follow_ibox {display: flex; justify-content: space-between;}
+				#follow_me a {display: block; width: 55px; height: 55px; text-align: center; display: flex; justify-content: center; align-items: center; border:2px solid #eee;}
+				#follow_me a i {font-size:23px; color: gray}
+				#follow_me a:hover {background: #eee}
+
+				/**instagram_feed**/	
+				#feed_box {width: 100%; height: 355px; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between;}
+				.feed_box {width: 32%;  height: 32% ; overflow: hidden}
+				.feed_box a img {width: 100%; height: 100%;}
+				.feed_box a img:hover {opacity: 0.5}
+
+				/**tags**/
+				#tags ul {display: flex; flex-wrap: wrap; }
+				#tags ul li {padding: 6px 10px; border: 2px solid #eee; margin: 0 7px 7px 0}
+				#tags ul li a {color: gray; font-size: 12px; letter-spacing: 1px;}
+				#tags ul li:hover {background: #333; border: 2px solid #333;}
+				#tags ul li:hover a {color: #fff;}
+
+				/*footer*/
+				footer {width:100%; height:450px; background: #111; display: flex; justify-content: center; align-items: center;}
+				#footerbox_wrap {width: 1270px; height: 90%; display: flex; flex-wrap:wrap; justify-content: space-between; text-align: center; align-content: space-between;}
+				.footerbox {width: 30%; height: 90%; padding: 7% 0 0 0; display: flex; flex-direction: column; align-items: center;}
+				.footerbox h6 {font-size: 14px; letter-spacing: 1px; margin: 0 0 5% 0; color: #fff}
+				.footerbox > a > img {width: 130px; position: relative; top:-30%;}
+				.footerbox > p {color: #fff; font-size: 15px; line-height: 20px; margin: 0 0 10px 0}
+				.footerbox > .footerbox_icons {width: 45%; height: 30px; margin: 20px 0 0 0; display: flex; justify-content: space-between;}
+				.footerbox > .footerbox_icons > a > i {font-size: 18px; color: #fff}
+				#footerbox_wrap > p {width: 100%; color: #fff; font-size: 12px; color: #666}
+				.footerbox > .footerbox_icons > a > i:hover {opacity: 0.5}
+			}
